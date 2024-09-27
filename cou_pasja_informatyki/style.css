@@ -1,0 +1,21 @@
+body{
+    background-color: #808080;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+}
+h1{
+    font-size: 40px;
+}
+/* non-visited link */
+a:link{
+    color:yellow;
+}
+/* visited link */
+a:visited{
+    color: yellow;
+}
+/* mouse over link */
+a:hover{
+    color: red;;
+}
