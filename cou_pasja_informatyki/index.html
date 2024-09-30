@@ -1,74 +1,119 @@
-<!DOCTYPE HTML>
-<html lang="pl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Michał Sikorski - Portfolio</title>
-    <meta name="description" content="Stworzę dla Ciebie wyjątkową stronę www! Zatrudnij programistę webowego: PHP, JavaScript, HTML, CSS, MySQL, WordPress, Joomla, Drupal." />
-    <meta name="keywords" content="zamów, stronę, tworzenie, www, programista, portfolio, php, javascript, html, css, WordPress, Joomla, Drupal" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrogranie</title>
+    <meta name="description" content="Serwis o starych grach pochodzących z Nintendo Entertainment System">
+    <meta name="keywords" content="gry, komputerowe,retro,nes, konsole, retrogranie, stare gry">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/fontello.css">
-    
+    <script src="jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function() {
+        var NavY = $('.nav').offset().top;
+
+        var stickyNav = function() {
+            var ScrollY = $(window).scrollTop();
+
+            if (ScrollY > NavY) {
+                $('.nav').addClass('sticky');
+            } else {
+                $('.nav').removeClass('sticky');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+    </script>
+
 </head>
 <body>
-
-    <div id="container">
-        <div class="rectangle">
-            <div id="logo"><a href="zatrudnij-programiste-webowego" class="tilelinkhtml5">Michał Sikorski</a></div>
-            <div id="zegar">12:00:00</div>
-            <div style="clear: both;"></div>
-        </div>
-
-        <div class="square">
-            <div class="tile1">
-                <a class="tilelink" href="kim-jestem"><i class="icon-adult"></i><br/>Kim jestem?</a>
-            </div>
-            <a href="oferta-tworzenie-stron-www" class="tilelinkhtml5">
-                <div class="tile1">
-                    <i class="icon-laptop"></i><br/>Co ofertuję?
-                </div>
-            </a>
-            <div style="clear: both;"></div>
-
-            <div class="tile2">
-                <a class="tilelink" href="cv-programista-php-javascript"> <i class="icon-graduation-cap"></i><br/>Curiculum vitae</a>
-            </div>
-            <div class="tile3">
-                <a class="tilelink" href="kontakt-programista-php"><i class="icon-mail"></i><br/>Kontakt ze mną</a>
-            </div>
-            <div style="clear: both;"></div>
-
-            <div class="tile4">
-                <i>Talk is cheap. Show me the code!</i><br />- Linus Torvalds, twórca Linuxа 
-
-            </div>
-        </div>
-        <div class="square">
-            <div class="tile5">
-                tytuł podstrony<br /><br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, quos doloremque. Quod, molestias. Consectetur, odit? Labore quasi eum tempora doloribus dolorum porro sunt dolores ab fugiat similique, repudiandae quo esse.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt ratione quod aut porro perspiciatis maxime eos neque sed obcaecati minima? 
-            </div>
-            <div class="yt">
-                <a class="tilelink" href="http://youtube.com" target="_blank"><i class="icon-youtube"></i></a>
-            </div>
-            <div class="fb">
-                <a class="tilelink" href="http://facebook.com" target="_blank"><i class="icon-facebook"></i></a>
-            </div>
-            <div class="linkedin">
-                <a class="tilelink" href="http://linkedin.com" target="_blank"><i class="icon-linkedin"></i></a>
-            </div>
-            <div class="x">
-                <a class="tilelink" href="http://x.com" target="_blank"><i class="icon-twitter"></i></a>
-            </div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="pad.png" style="float:left;" alt="">
+                <span style="color: #c34f4f">retro</span>granie.com</div>
 
         </div>
-        <div style="clear: both;"></div>
 
-        <div class="rectangle">2024 &copy; Michał Sikorski - Portfolio. Programista webowy zaprasza do współpracy! <i class="icon-mail-alt"></i>msikorski@100ppro.net</div>
+        <div class="nav">
+            <ol>
+                <li><a href="#">Strona główna</a>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Klasyki NES</a>
+                    <ul>
+                        <li><a href="#">Contra</a></li>
+                        <li><a href="#">Mario Bros</a></li>
+                        <li><a href="#">Duck Tales</a></li>
+                        <li><a href="#">Legend of Zelda</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gry filmowe</a>
+                    <ul>
+                        <li><a href="#">Home Alone</a></li>
+                        <li><a href="#">Dick Tracy</a></li>
+                        <li><a href="#">The Simpsons</a></li>
+                        <li><a href="#">Top Gun</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Bijatyki</a>
+                    <ul>
+                        <li><a href="#">Mortal Kombat</a></li>
+                        <li><a href="#">Nekketsu K.D.</a></li>
+                        <li><a href="#">Double Dragon</a></li>
+                        <li><a href="#">Turtles T.</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Gry sportowe</a>
+                    <ul>
+                        <li><a href="#">Goal 3</a></li>
+                        <li><a href="#">Excitebike </a></li>
+                        <li><a href="#">Ike Ike Hockey</a></li>
+                        <li><a href="#">Tennis</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">O autorach</a></li>
+            </ol>
+        </div>
+
+        <div class="content">
+            <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio sunt architecto unde, ipsum cum itaque nostrum dignissimos quam excepturi! Eveniet quidem ea quos recusandae inventore voluptates error obcaecati aspernatur quod!</span><span>Magni, quas et. Et quis architecto fugiat labore laborum quo, unde nemo eligendi provident dignissimos. Eos, ipsa at. Architecto ullam commodi maiores sapiente repellat unde expedita excepturi suscipit quis alias.</span><span>Id nam, vel quam suscipit non vero dolorem exercitationem libero, minus sunt nobis, qui iste quia minima earum impedit ea similique dolore labore iure praesentium corrupti. Expedita at obcaecati alias.</span><span>Unde atque illum consequatur vero repudiandae impedit magnam optio in eius. Vitae omnis laborum repellat vero ut unde neque minima magni voluptas adipisci nesciunt doloremque a velit, reiciendis animi aut.</span><span>Qui dolores odio dolor molestias deserunt beatae, laudantium, quisquam ab, tempora debitis accusantium porro enim quod voluptatum perferendis ad at eligendi inventore corporis eaque quaerat? Saepe laudantium quod ipsam vero.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos unde, nulla voluptatibus neque voluptate magni laborum assumenda quas vitae veritatis? Atque at nulla ipsa accusantium impedit sed, labore similique natus?</span><span>Ullam sit obcaecati non reiciendis officiis, impedit, in magnam provident odio vel itaque voluptatum. Perspiciatis, iusto aut nesciunt et molestiae veniam tempora voluptas atque laborum iste porro ipsum quisquam consequatur?</span><span>Deleniti ullam laudantium, id dicta voluptatem aut earum? Illo enim impedit ullam facilis? Soluta, error. Deleniti nostrum minima repellat dolor, labore repudiandae veniam rem ipsum corrupti sint officia eius eligendi.</span><span>Ipsam repudiandae architecto, et tempore facere voluptatum! Officiis, numquam! Assumenda provident itaque voluptate, reprehenderit in delectus voluptas amet autem similique placeat expedita pariatur, eos natus, quos eius cumque dolores accusantium?</span><span>Nostrum modi nihil voluptatibus vitae! Ratione in ea rerum dolore odio, commodi nostrum fugit excepturi suscipit itaque debitis minus quod recusandae facilis tempora, laborum dicta doloribus consequuntur obcaecati! Ab, reprehenderit.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat culpa numquam velit est quibusdam expedita a eius accusamus aperiam rem, itaque voluptate perferendis animi, nam placeat. Atque alias maxime veniam!</span><span>Voluptatum autem debitis inventore necessitatibus facilis dicta velit itaque enim, nostrum laudantium laboriosam ipsum nihil ab explicabo magnam ipsa earum qui obcaecati quod aliquam quasi quidem. Unde, culpa dolorem! Repellat.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odio officiis impedit, facilis provident ea quo itaque deleniti aut atque fugit assumenda similique maiores voluptates perspiciatis asperiores ducimus? Blanditiis, itaque!</span><span>Ullam ab totam quae, architecto, deleniti officiis blanditiis minima asperiores quos quibusdam ipsum id non consectetur aut necessitatibus voluptatem atque. Voluptatum natus neque vel cumque voluptatibus! Iste, reprehenderit? Culpa, sequi.</span></p>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore commodi, vitae animi incidunt reiciendis error earum dolor maiores non, culpa, amet placeat rem suscipit id ratione reprehenderit odit. Deleniti, cumque.</span><span>Obcaecati, incidunt consequuntur dolore sit doloremque perspiciatis delectus reiciendis tempora nihil pariatur fugit similique odit ipsam laborum omnis nisi cupiditate exercitationem nemo quos provident. Maxime illum cumque possimus vel quam?</span></p>
+            <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam nostrum accusantium corporis mollitia praesentium debitis nihil explicabo itaque excepturi eos, eum maiores ea tenetur temporibus sapiente laborum? Amet, obcaecati repellendus!</span><span>Eos ab assumenda illum tempore vel maiores quod, qui rem neque tenetur harum quisquam sed, excepturi dolor doloremque animi asperiores explicabo, incidunt eligendi similique. Ducimus labore dicta nulla aliquam minima.</span></p>
+            <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maiores, est itaque nobis rerum aliquam totam exercitationem quasi. Dolor perspiciatis quaerat amet quidem dignissimos laborum magni placeat dolorem consequatur quia.</span><span>Aliquid accusamus quam perferendis assumenda minus consequuntur enim officiis ipsum incidunt aperiam ducimus nihil nisi et magnam omnis ratione error magni neque quo necessitatibus possimus aliquam cupiditate, adipisci ex? Eveniet?</span></p>
+        </div>
+
+        <div class="socials">
+            <div class="socialdivs">
+                <div class="fb"><i class="icon-facebook"></i></div>
+                <div class="yt"><i class="icon-youtube"></i></div>
+                <div class="x"><i class="icon-twitter"></i></div>
+                <div class="li"><i class="icon-linkedin"></i></div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Retrogranie.com &copy; 2024 Thank you for you visit Mario! But our princess is in another castle. ;-)
+        </div>
     </div>
+
 </body>
 </html>

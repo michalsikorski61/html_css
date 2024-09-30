@@ -1,164 +1,175 @@
+
 body{
-    font-family: "Lato", sans-serif;
     background-color: #303030;
     color: #fff;
+    font-family: "Lato", system-ui;
     font-size: 20px;
+    margin: 0 !important;
 }
 
-#container{
+.wrapper{
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    padding: 40px 0;
+
+}
+
+.logo{
+    width: 450px;
+    font-size: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #c34f4f;
+    text-align: center;
+    border-top: 1px solid #751b1b;
+    border-bottom: 1px solid #751b1b;
+    /* min-height: 40px; */
+}
+
+.content{
     width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-.rectangle{
-    width: 960px;
-    margin: 20px;
-    text-align: center;
-}
-
-.square{
-    width: 50%;
-    float: left;
-}
-#logo{
-    float:left;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 70px;
-    width: 600px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-#zegar{
-    float: left;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: left ;
-}
-
-.tile1{
-    float: left;
-    width: 230px;
-    height: 142px;
-    margin: 10px;
-    background-color: #3095d3;
-    text-align: center;
-}
-.tile1:hover{
-    background-color: #2084c2;
-}
-
-.tile2{
-    float: left;
-    width: 230px;
-    height: 142px;
-    margin: 10px;
-    background-color: #666666;
-    text-align: center;
-}
-
-.tile2:hover{
-    background-color: #555555;
-}
-
-.tile3{
-    float: left;
-    width: 230px;
-    height: 142px;
-    margin: 10px;
-    background-color: #93c748;
-    text-align: center;
-}
-
-.tile3:hover{
-    background-color: #82b637;
-}
-
-.tile4{
-    margin: 10px;
-    width: 420px;
-    height: 82px;
-    background-color: #ee5a32;
-    text-align: center;
-    font-size: 26px;
-    padding: 30px;
-    line-height: 150%;
-}
-
-.tile4:hover{
-    background-color: #dd4921;
-}
-.tile5{
-    margin: 10px;
-    width: 420px;
-    height: 244px;
-    background-color: #666666;
     text-align: justify;
-    padding: 30px;
-}
-.tile5:hover{
-    background-color: #555555;
+    padding-top: 10px;
 }
 
-.yt{
-    width: 105px;
-    float: left;
-    height: 142px;
-    margin: 10px;
-    background-color: #d94348;
+.socials{
+    width: 100%;
+    text-align: center;
+    background-color: #292929;
 }
-.yt:hover{
-    background-color: #c83237;
+
+.socialdivs{
+    width: 1000px;
+    margin: 0 auto;
 }
 
 .fb{
+    width: 250px;
+    height: 155px;
     float: left;
-    height: 142px;
-    margin: 10px;
-    width: 105px;
-    background-color: #0866ff;
 }
 
 .fb:hover{
-    background-color: #0755ee;
+    background-color: #4668b3;
+
 }
-.linkedin{
+
+.yt{
+    width: 250px;
+    height: 155px;
     float: left;
-    height: 142px;
-    margin: 10px;
-    width: 105px;
-    background-color: #0077b5;
 }
-.linkedin:hover{
-    background-color: #0066a4;
+
+.yt:hover{
+    background-color: #d94348;
+
 }
 
 .x{
+    width: 250px;
+    height: 155px;
     float: left;
-    height: 142px;
-    margin: 10px;
-    width: 105px;
-    background-color: #000000;
 }
+
 .x:hover{
-    opacity: .8;
+    background-color: #000000;
+
 }
 
-a.tilelink{
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    height: 100%;
+.li{
+    width: 250px;
+    height: 155px;
+    float: left;
+}
+
+.li:hover{
+    background-color: #0077b5;
+
+}
+
+.footer{
+   text-align: center;
+    background-color: #222222;
+    padding: 30px;
+}
+
+.sticky{
     width: 100%;
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-a.tilelinkhtml5{
-    color: #fff;
-    text-decoration: none;
-    
+ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    height: 35px;
+    line-height: 200%;
+    display: inline-block;
 }
+
+ol a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+/* rodzic > potomek */
+ol > li{
+    float: left;
+    width: 150px;
+    height: 40px;
+    border-right: 1px dashed #751b1b;
+}
+
+ol > li:first-child{
+    border-left: 1px dashed #751b1b;
+}
+
+ol > li:hover{
+    background-color: #cf6969;
+
+}
+
+ol > li:hover > a{
+    color: #451717;
+}
+
+ol > li > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    display: none;
+}
+
+ol > li:hover > ul{
+    display: block;
+}
+
+ol > li > ul > li{
+    background-color: #cf6969;
+    position: relative;
+    z-index: 100;
+    border-top: 1px dashed #751b1b;
+
+}
+
+ol > li > ul > li:hover{
+    background-color: #c34f4f;
+}
+
+ol > li > ul > li:hover > a{
+    color: #451717;
+}
+
