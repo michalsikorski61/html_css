@@ -1,116 +1,164 @@
 body{
-    background-color: #404040;
     font-family: "Lato", sans-serif;
+    background-color: #303030;
+    color: #fff;
+    font-size: 20px;
 }
 
 #container{
     width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+.rectangle{
+    width: 960px;
+    margin: 20px;
+    text-align: center;
+}
+
+.square{
+    width: 50%;
+    float: left;
+}
 #logo{
-    color: white;
-    margin-top: 20px;
-    font-size: 44px;
-    letter-spacing: 3px;
-    font-weight: 900;
-}
-
-#menu{
-    background-color: #303030;
-    margin-top: 20px;
-    color: #fff;
-    padding: 10px;
-}
-
-#topbar{
-    background-color: #128870;
-    color: #fff;
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 25px;
-    height: 170px;
-
-}
-#topbarL{
     float:left;
-    padding: 20px;
-    width: 138px;
-    text-align: center;
-    border-right: 2px dotted #cccccc;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-#topbarR{
-    float:left;
-    padding: 20px;
-    width: 760px;
-    font-size: 16px;
+#zegar{
+    float: left;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left ;
+}
+
+.tile1{
+    float: left;
+    width: 230px;
+    height: 142px;
+    margin: 10px;
+    background-color: #3095d3;
+    text-align: center;
+}
+.tile1:hover{
+    background-color: #2084c2;
+}
+
+.tile2{
+    float: left;
+    width: 230px;
+    height: 142px;
+    margin: 10px;
+    background-color: #666666;
+    text-align: center;
+}
+
+.tile2:hover{
+    background-color: #555555;
+}
+
+.tile3{
+    float: left;
+    width: 230px;
+    height: 142px;
+    margin: 10px;
+    background-color: #93c748;
+    text-align: center;
+}
+
+.tile3:hover{
+    background-color: #82b637;
+}
+
+.tile4{
+    margin: 10px;
+    width: 420px;
+    height: 82px;
+    background-color: #ee5a32;
+    text-align: center;
+    font-size: 26px;
+    padding: 30px;
+    line-height: 150%;
+}
+
+.tile4:hover{
+    background-color: #dd4921;
+}
+.tile5{
+    margin: 10px;
+    width: 420px;
+    height: 244px;
+    background-color: #666666;
     text-align: justify;
+    padding: 30px;
+}
+.tile5:hover{
+    background-color: #555555;
 }
 
-#sidebar{
+.yt{
+    width: 105px;
     float: left;
-    width: 148px;
-    min-height: 620px;
-    padding: 20px;
-    background-color: lightgray;
-    text-align: center;
-    font-size: 18px;
-    border-right: 2px dotted #666;
+    height: 142px;
+    margin: 10px;
+    background-color: #d94348;
+}
+.yt:hover{
+    background-color: #c83237;
 }
 
-#content{
+.fb{
     float: left;
-    padding: 40px;
-    width: 730px;
-    background-color: #dedede;
-    min-height: 580px;
-    text-align: justify;
+    height: 142px;
+    margin: 10px;
+    width: 105px;
+    background-color: #0866ff;
 }
 
-#footer{
-    clear: both;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
+.fb:hover{
+    background-color: #0755ee;
 }
-
-.option{
+.linkedin{
     float: left;
-    min-width: 50px;
-    height: 25px;
-    font-size: 18px;
-    padding: 10px;
-    border-right: 2px dotted #444444;
+    height: 142px;
+    margin: 10px;
+    width: 105px;
+    background-color: #0077b5;
+}
+.linkedin:hover{
+    background-color: #0066a4;
+}
+
+.x{
+    float: left;
+    height: 142px;
+    margin: 10px;
+    width: 105px;
+    background-color: #000000;
+}
+.x:hover{
     opacity: .8;
 }
-.option:hover{
-    background-color: #000000;
-    cursor: pointer;
-}
-.optionLSide{
-    font-size: 18px;
-    height: 25px;
-    padding: 10px;
-    border-bottom: 2px dotted #444444;
-}
 
-.optionLSide:hover{
-    background-color: #f36742;
+a.tilelink{
     color: #fff;
-    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    
 }
 
-.bigtitle{
-    font-size: 32px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-.dottedLine{
-    height: 5px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    border-bottom: 2px dotted #444444;
+a.tilelinkhtml5{
+    color: #fff;
+    text-decoration: none;
+    
 }
