@@ -10,6 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function($){
+            //scrikk reset
+            $.scrollTo(0);
+            $('#link3').click(function() { $.scrollTo($('#maski'), 1000); });
+        }
+        );
+    </script>
 </head>
 <body>
     <div id="logo">Wykład #1: Monitory komputerowe</div>
@@ -21,7 +31,7 @@
                     <ul>
                         <li>Budowa monitora</li>
                         <li>Zasada działania</li>
-                        <li><a href="#maski">Maska. Rodzaje masek w monitorach </a></li>
+                        <li><a id="link3" href="#">Maska. Rodzaje masek w monitorach </a></li>
                         <li>Wady i zalety</li>
                         <li>Dobór parametrów</li>
                     </ul>
