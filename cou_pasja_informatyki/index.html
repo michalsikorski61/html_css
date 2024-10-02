@@ -17,6 +17,13 @@
             //scrikk reset
             $.scrollTo(0);
             $('#link3').click(function() { $.scrollTo($('#maski'), 1000); });
+            $('.scrollUp').click(function() { $.scrollTo($('body'), 1000); });
+
+            //pokazuję i ukrywam przycisk
+            $(window).scroll(function(){
+                if($(this).scrollTop()>300) $('.scrollUp').fadeIn();
+                else $('.scrollUp').fadeOut();
+            });
         }
         );
     </script>
@@ -24,6 +31,7 @@
 <body>
     <div id="logo">Wykład #1: Monitory komputerowe</div>
     <div id="container">
+        <a href="#" class="scrollUp"></a>
         <div id="spis">
             
             <ol class="chapters">
@@ -596,5 +604,6 @@
 		</div>
 
     </div>
+    <div id="footer">Strona by Michał Sikorski aka Michalski9 2024</div>
 </body>
 </html>
