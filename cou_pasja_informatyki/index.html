@@ -32,7 +32,7 @@
 	
 		<article>
 		
-			<form action="" method="post">
+			<form action="" method="post" enctype="multipart/form-data">
                <div class="row">
 					<fieldset>
 						<legend>Rodzaj nadwozia</legend>
@@ -102,11 +102,58 @@
 					<label>Ile kluczyków: <input type="number" name="keys" id="keys" step="0.5"></label>
 			   </div>
 
+			   <div class="row">
+					<label >Adres e-mail:<input type="email" name="email" id="email" multiple></label>
+					<label>Numer telefonu:<input type="tel" name="tel"></label>
+				</div>
+
+				<div class="row">
+					<label>Data dostawy<input type="date" min="2019-03-01" max="2019-05-31"></label>
+					<label>Czas dostawy<input type="time" name="time" step="1"></label>
+				</div>
+
+				<div class="row">
+					<div><label for="comment">Uwagi do zamówienia</label></div>
+					<textarea name="textarea" id="comment" cols="100" rows="10"></textarea>
+				</div>
+
+				<div class="row">
+					<label for="img">Prześlij zdjęcie poprzedniego samochodu</label><input type="file" name="img" id="img" accept="image/x-png,image/jpeg" multiple>
+				</div>
+
+				<div class="row"><label>Kolor lakieru:<input type="color" name="color"></label></div>
+
+				<!-- <div class="row">
+					<ol start="4">
+						<li>dsdfds</li>
+						<li value="8">kjljl</li>
+						<li>lkjjl</li>
+					</ol>
+					<ul type="square">
+						<li>jkjl</li>
+						<li>kljk</li>
+						<li>jkhj</li>
+					</ul>
+				</div> -->
+
+				<div class="row">
+					<label>Stopień realizacji zamówienia <progress max="100" value="25"></progress></label>
+				</div>
+
+				<div class="row">
+					<label>Stopień zatankowania samochodu<meter min="0" max="100" title="procent" value="10" low="30" high="70" optimum="60"></meter></label>
+				</div>
+
+				<div class="row">
+					<label>Twoja strona www<input type="url" name="url  "></label>
+				</div>
+
+				<input type="hidden" name="rokwn" value="4et3tg34564y">
 
 			   <div class="row">
 				<input type="submit" value="Wyślij">
-				<input type="button" value="Zamawiam">
-				<button type="button">Zamawiam</button>
+				<!-- <input type="button" value="Zamawiam">
+				<button type="button">Zamawiam</button> -->
 			
 			</div>
 			</form>		

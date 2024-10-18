@@ -46,3 +46,14 @@ input::placeholder{
 	color: #b3b6ad;
 	font-weight: bold;
 }
+
+#comment{
+	resize: none;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+progress{
+	width: 100%;
+	
+}
