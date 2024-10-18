@@ -57,3 +57,7 @@ progress{
 	width: 100%;
 	
 }
+
+input[type="time"]{
+	color: white;
+}

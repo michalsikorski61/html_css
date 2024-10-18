@@ -103,13 +103,13 @@
 			   </div>
 
 			   <div class="row">
-					<label >Adres e-mail:<input type="email" name="email" id="email" multiple></label>
-					<label>Numer telefonu:<input type="tel" name="tel"></label>
+					<label >Adres e-mail:<input type="email" name="email" id="email" multiple required></label>
+					<label>Numer telefonu:<input type="tel" name="tel" required></label>
 				</div>
 
 				<div class="row">
 					<label>Data dostawy<input type="date" min="2019-03-01" max="2019-05-31"></label>
-					<label>Czas dostawy<input type="time" name="time" step="1"></label>
+					<label>Czas dostawy<input type="time" name="time" step="1" value="18:00" readonly disabled></label>
 				</div>
 
 				<div class="row">
@@ -152,6 +152,7 @@
 
 			   <div class="row">
 				<input type="submit" value="Wyślij">
+				<input type="reset" value="Resetuj forma">
 				<!-- <input type="button" value="Zamawiam">
 				<button type="button">Zamawiam</button> -->
 			
