@@ -1,167 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="pl">
 <head>
-
-	<meta charset="utf-8">
-	<title>Katalog samochodowy</title>
-	<meta name="description" content="Stwórz wymarzony model swojego samochodu!">
-	<meta name="keywords" content="samochód, katalog, salon, nowe auto">
-	<meta name="author" content="Jan Nowak">
-	
-	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
-	
-	<link rel="stylesheet" href="main.css">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
-	
-	<!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<![endif]-->
-	
+  <meta charset="utf-8">
+  <title>Flexbox - tutorial 1/3</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="main.css" type="text/css">
 </head>
-
 <body>
 
-	<header>
-	
-		<h1>Wybierz konfigurację samochodu</h1>
+	<main class="container">
+		<header class="red">red</header>
+		<div class="green">green</div>
+		<div class="blue">blue</div>
 
-	</header>
-	
-	<main>
-	
-		<article>
-		
-			<form action="" method="post" enctype="multipart/form-data">
-               <div class="row">
-					<fieldset>
-						<legend>Rodzaj nadwozia</legend>
-						<div><label><input type="radio" name="nadwozie" value="1" checked>Hatchback</label></div>
-						<div><label><input type="radio" name="nadwozie" value="2">Kabriolet</label></div>
-						<div><label><input type="radio" name="nadwozie" value="3">Kombi</label></div>
-					</fieldset>
-			   </div>
-
-			   <div class="row">
-					<label for="engine">Rodzaj silnika</label>
-					<select name="engin" id="engine">
-							<option value="w">wysokoprężny</option>
-							<option value="b" selected>benzynowy</option>
-							<option value="e">elektryczny</option>
-							<option value="h">hybrydowy</option>
-					</select>
-			   </div>
-
-			   <div class="row">
-					<fieldset>
-						<legend>Wyposażenie samochodu</legend>
-						<div>
-							<div class="col">
-								<div><label><input type="checkbox"  name="eq[]" id="klima" value="1" checked disabled>Klimatyzacja</label></div>
-								<div><label><input type="checkbox"  name="eq[]" id="espabs" value="2" checked disabled>systemy: ESP i ABS</label></div>
-								<div><label><input type="checkbox"  name="eq[]" id="skora" value="3">tapicerka skórzana</label></div>
-								<div><label><input type="checkbox"  name="eq[]" id="tempomat" value="4">tempomat</label></div>
-							</div>
-
-							<div class="col">
-								<div><label><input type="checkbox"  name="eq[]" value="5">tylny spojler dachowy</label></div>
-								<div><label><input type="checkbox"  name="eq[]" value="6">radio z bluetooth</label></div>
-								<div><label><input type="checkbox"  name="eq[]" value="7">Reflektory przeciwmgłowe</label></div>
-								<div><label><input type="checkbox"  name="eq[]" value="8">przyciemniane tylne szyby</label></div>
-							</div>
-
-							<div class="col">
-								<div><label><input type="checkbox"  name="eq[]" value="9">czujniki parkowania</label></div>
-								<div><label><input type="checkbox"  name="eq[]" value="10">podgrzewane fotele</label></div>
-								<div><label><input type="checkbox"  name="eq[]" value="11">składane lusterka</label></div>
-								<div><label><input type="checkbox"  name="eq[]" value="12">światła LED do jazdy dziennej</label></div>
-							</div>
-						</div>
-					</fieldset>
-			   </div>
-
-			   <div class="row">
-					<label for="tree">Choinki zapachowe</label>
-					<div style="margin-top: 10px;">
-						<select name="tree[]" id="tree" multiple size="4">
-							<option value="kokos">kokosowa</option>
-							<option value="cyt">cytrynowa</option>
-							<option value="trus">truskawkowa</option>
-							<option value="brzo">brzoskwiniowa</option>
-						</select>
-					</div>
-			   </div>
-
-			   <div class="row">
-					<label>Imie: <input type="text" name="imie" placeholder="Jak masz na imię?"></label>
-					<label>Hasło: <input type="password" name="pass"></label>
-					<label>Szukaj: <input type="search" name="search"></label>
-			   </div>
-
-			   <div class="row">
-					<label>Ile kluczyków: <input type="number" name="keys" id="keys" step="0.5"></label>
-			   </div>
-
-			   <div class="row">
-					<label >Adres e-mail:<input type="email" name="email" id="email" multiple required></label>
-					<label>Numer telefonu:<input type="tel" name="tel" required></label>
-				</div>
-
-				<div class="row">
-					<label>Data dostawy<input type="date" min="2019-03-01" max="2019-05-31"></label>
-					<label>Czas dostawy<input type="time" name="time" step="1" value="18:00" readonly disabled></label>
-				</div>
-
-				<div class="row">
-					<div><label for="comment">Uwagi do zamówienia</label></div>
-					<textarea name="textarea" id="comment" cols="100" rows="10"></textarea>
-				</div>
-
-				<div class="row">
-					<label for="img">Prześlij zdjęcie poprzedniego samochodu</label><input type="file" name="img" id="img" accept="image/x-png,image/jpeg" multiple>
-				</div>
-
-				<div class="row"><label>Kolor lakieru:<input type="color" name="color"></label></div>
-
-				<!-- <div class="row">
-					<ol start="4">
-						<li>dsdfds</li>
-						<li value="8">kjljl</li>
-						<li>lkjjl</li>
-					</ol>
-					<ul type="square">
-						<li>jkjl</li>
-						<li>kljk</li>
-						<li>jkhj</li>
-					</ul>
-				</div> -->
-
-				<div class="row">
-					<label>Stopień realizacji zamówienia <progress max="100" value="25"></progress></label>
-				</div>
-
-				<div class="row">
-					<label>Stopień zatankowania samochodu<meter min="0" max="100" title="procent" value="10" low="30" high="70" optimum="60"></meter></label>
-				</div>
-
-				<div class="row">
-					<label>Twoja strona www<input type="url" name="url  "></label>
-				</div>
-
-				<input type="hidden" name="rokwn" value="4et3tg34564y">
-
-			   <div class="row">
-				<input type="submit" value="Wyślij">
-				<input type="reset" value="Resetuj forma">
-				<!-- <input type="button" value="Zamawiam">
-				<button type="button">Zamawiam</button> -->
-			
-			</div>
-			</form>		
-			
-		</article>
-		
+		<nav>1</nav>
+		<article>2</article>
+		<aside>3</aside>
+		<footer>stopka</footer>
 	</main>
-
 </body>
 </html>

@@ -6,58 +6,57 @@ body
 	color: #efefef;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
-
 }
 
-h1
-{
-	font-size: 42px;
-	font-weight: 400;
-	color: #FA7C00;
-	margin-bottom: 20px;
+main > *{
+	padding: 20px;
 	text-align: center;
 }
 
-.row{
-	margin: 20px 10px;
+.container{
+	margin: 0 auto;
+	max-width: 1000px;
+	border: 1px solid red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
 }
 
-.col{
-	display: inline-block;
-	margin: 0 10px;
+.red{
+	background-color: lightcoral;
+	flex-basis: 100%;
 }
-input{
-	outline: none;
-	background-color: #4B423D;
-
+.green{
+	background-color: seagreen;
+	flex-basis: 48%;
 }
-input[type="text"]{
-	width: 100%;
-	padding: 10px;
-	margin: 10px 0;
-	
-	
-}
-input:focus{
-	border: 1px solid #FA7C00;
-	color: white;
-}
-input::placeholder{
-	color: #b3b6ad;
-	font-weight: bold;
+.blue{
+	background-color: skyblue;
+	/* flex-basis: 40%;
+	flex-grow: 1; */
+	flex: 1 0 42%
 }
 
-#comment{
-	resize: none;
-	border-radius: 10px;
-	padding: 10px;
+nav{
+	background-color: chocolate;
+	flex-basis: 20%;
 }
 
-progress{
-	width: 100%;
-	
+article{
+	background-color: blueviolet;
+	/* flex-basis: 42%;
+	flex-grow: 1; */
+	flex: 1 0 42%
 }
 
-input[type="time"]{
-	color: white;
+aside{
+	background-color: darkcyan;
+	flex-basis: 20%;
+}
+
+footer{
+	background-color: crimson;
+	flex-basis: 100%;
 }
