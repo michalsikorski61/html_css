@@ -10,20 +10,11 @@ body{
 	flex-direction: row;
 	flex-wrap: wrap;
 }
+
+
 .red{
 	background-color: red;
-	flex-basis: 100%;
-}
-
-.blue{
-	background-color: blue;
-	flex-basis: 50%;
-	
-}
-.purple{
-	background-color: purple;
-	flex-basis: 50%;
-	
+    height: 100px;
 }
 
 .orange{
@@ -35,8 +26,30 @@ body{
 	background-color: black;
     flex-basis: 33.33%;
 }
+.purple{
+	height: 50px;
+	background-color: purple;
+}
+.lightgray{
+	height: 50px;
+	background-color: lightgray;
+}
 
 .green{
     background-color: green;
     flex-basis: 33.33%;
+}
+
+.green0{
+	height: 33px;
+    background-color: green;
+}
+.white{
+	height: 33px;
+    background-color: white;
+}
+
+.ooo{
+	height: 34px;
+    background-color: #000;
 }
