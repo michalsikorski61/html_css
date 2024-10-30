@@ -1,121 +1,19 @@
-body{
-	background-color: #404040;
-	font-family: 'Lato', sans-serif;
-	font-size: 20px;
+header{
+	font-size: 40px;
+	font-weight: bold;
 }
-.conatainer{
-	margin: 0 auto;
-	min-width: 1000px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+nav{
+	text-align: center;
 }
-
-
-.left{
-	flex-basis: 50%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+nav > ul{
+	list-style-type: none;
 }
-
-.firstLeft{
-	flex-basis: 100%;
-	background-color: #332;
-	height: 100px;
-
+nav > ul > li{
+	display: inline-block;
 }
-.leftLeft{
-	flex-basis: 50%;
-	background-color: aqua;
-	height: 100px;
+nav > ul > li:first-child{
+	text-transform: uppercase !important;
 }
-
-.rightleft{
-	flex-basis: 50%;
-	height: 100px;
-	background-color: #234837;
-}
-
-.right{
-	flex-basis: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-	background-color: #892343;
-}
-
-.up{
-	display: flex;
-	flex-basis: 100%;
-	flex-wrap: nowrap;
-	background-color: #234837;
-	height: 50%;
-}
-.up .leftright{
-	display: flex;
-	flex-basis: 66.66%;
-	flex-wrap: wrap;
-	background-color: aliceblue;
-}
-
-.up .leftright .first{
-	flex-basis: 33.33%;
-	height: 50%;
-	background-color: red;
-}
-
-.up .leftright .second{
-	flex-basis: 33.33%;
-    height: 50%;
-    background-color: yellow;
-}
-
-.up .leftright .third{
-	flex-basis: 33.33%;
-    height: 50%;
-    background-color: green;
-}
-
-.up .leftright .longdown{
-	flex-basis: 66.66%;
-    height: 50%;
-    background-color: pink;
-}
-
-.up .rightright{
-	display: flex;
-    flex-basis: 33.34%;
-    flex-wrap: wrap;
-    background-color: blue;
-}
-
-.down{
-	display: flex;
-	flex-basis: 100%;
-	background-color: white;
-	height: 50%;
-}
-.down .leftdown{
-	display: flex;
-	flex-basis: 25%;
-	flex-wrap: wrap;
-	background-color: #342353;
-}
-
-.down .leftdown .up0{
-	flex-basis: 100%;
-	height: 50%;
-	background-color: darkblue;
-}
-
-.down .leftdown .down0{
-	flex-basis: 100%;
-	height: 50%;
-	background-color: #892343;
-}
-.bottom{
-	background-color: red;
-	flex-basis: 100%;
-	height: 50px;
+article{
+	text-align: center;
 }
