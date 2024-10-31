@@ -25,6 +25,7 @@ input[type="password"]{
 	padding: 10px;
 	box-sizing: border-box;
 	outline: none;
+	margin-top: 10px;
 }
 
 input[type="text"]:focus,
@@ -55,4 +56,11 @@ input[type="submit"]:focus{
 }
 input[type="submit"]:hover{
     background-color: rgb(55, 185, 61);
+}
+
+input::placeholder{
+	color: red;
+}
+input:focus::placeholder{
+	color: rgba(66, 140, 66,1);
 }
