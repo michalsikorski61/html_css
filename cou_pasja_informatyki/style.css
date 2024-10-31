@@ -11,4 +11,5 @@ body{
 	width: 300px;
 	padding: 50px;
 	margin-top: 200px;
+	box-shadow: 3px 3px 30px 5px rgba(204,204,204, .9);
 }
