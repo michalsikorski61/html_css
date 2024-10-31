@@ -13,3 +13,13 @@ body{
 	margin-top: 200px;
 	box-shadow: 3px 3px 30px 5px rgba(204,204,204, .9);
 }
+
+input{
+	width: 300px;
+	background-color: #efefef;
+	color: #666;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+}
