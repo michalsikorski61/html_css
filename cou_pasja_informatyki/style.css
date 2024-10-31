@@ -1,44 +1,14 @@
 body{
-	background-color: #bbb;
+	background-image: url("img/hexellence.png");
 	font-family: 'Lato';
-}
-
-.container{
-	margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-}
-
-header{
-    flex-basis: 100%;
-	text-align: center;
-}
-.main{
-	flex-basis: 100%;
-	text-align: center;
-}
-main{
 	display: flex;
-	flex-basis: 100%;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	justify-content: center;
 	
 }
-
-main nav{
-	flex-basis: 10%;
-}
-main article{
-	flex-basis: 80%;
-}
-
-main aside{
-	flex-basis: 10%;
-}
-
-footer{
-	flex-basis: 100%;
-	text-align: center;
+#container{
+	background-color: white;
+	width: 300px;
+	padding: 50px;
+	margin-top: 200px;
 }
